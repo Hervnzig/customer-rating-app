@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="welcome-section" >
+        <div class="container">
+            <div class="image-section">
+                <!-- Add your image here -->
+                <img src="Welcome-image.avif" alt="Creative Image">
+            </div>
+            <div class="text-section">
+                <h1>Welcome to Our Customer Rating experience Platform</h1>
+                <p>🌟 <strong>Your insights are our guiding stars.</strong></p>
+    <p class="left-aligned-list">We're thrilled to have you here and genuinely appreciate the time you're taking to share your thoughts with us. Every piece of feedback is a step towards excellence, as it helps us to:</p>
+    <ul class="left-aligned-list">
+        <li>Improve our products and services.</li>
+        <li>Better understand your needs and expectations.</li>
+        <li>Create experiences that you love.</li>
+    </ul>
+    <p class="left-aligned-list">Together, let's make <span class="company-name">Your Company's Name</span> your favorite place to be!</p>
+                <button id="start-feedback">Start Feedback</button>
+            </div>
+        </div>
+    </div>
+    <div class="site-header" style="display:none;">
+        <header>
+            <img src="https://i.pinimg.com/originals/e5/31/85/e53185a934f359fc9bf42783277d0874.png" alt="Company Logo" class="logo">
+            <nav>
+                <a href="#about">About Us</a>
+            </nav>
+        </header>
+    </div>
+    
+    <button id="back-button" style="display:none;">Back</button>
+    <!-- Your welcome-section and feedback-container sections follow -->
+    
+    <div class="feedback-container" style="display:none;" >
+        <div class="user-details-section">
+            
+            <div class="input-group">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" placeholder="Your first name">
+            </div>
+            <div class="input-group">
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" placeholder="Your last name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Your email address">
+            </div>
+            <div class="input-group">
+                <label for="phone-number">Phone Number:</label>
+                <input type="tel" id="phone-number" placeholder="Your phone number">
+            </div>
+        </div>
+        
+        <div class="feedback-section">
+            <p>Rate your experience with our product...</p>
+            <div class="stars" data-rating="0">
+                <span class="star">&starf;</span>
+                <span class="star">&starf;</span>
+                <span class="star">&starf;</span>
+                <span class="star">&starf;</span>
+                <span class="star">&starf;</span>
+            </div>
+        </div>
+        <div class="input-section">
+            <p>Anything that can be improved?</p>
+            <textarea placeholder="Your feedback (Optional)"></textarea>
+            <button id="submit" onclick="changeScreen(welcomeScreen, feedbackFormScreen)">Submit</button>
+            <button id="back-button">Back</button>
+        </div>
+        <div class="thank-you" style="display: none;">
+            <p>Thanks for the feedback!</p>
+        </div>
+    </div>
+    <footer class="site-footer">
+        &copy; 2024 CompanyName. All rights reserved.
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

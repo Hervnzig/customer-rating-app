@@ -1,0 +1,359 @@
+.feedback-container {
+    font-family: Arial, sans-serif;
+    width: 350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-section p, .input-section p {
+    margin: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.stars {
+    display: inline-block;
+}
+
+.star {
+    cursor: pointer;
+    font-size: 25px;
+    color: grey;
+}
+
+.star:hover {
+    color: #ffc107;
+}
+
+.input-section textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.input-section button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #2a458a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.thank-you p {
+    text-align: center;
+    color: #4CAF50;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.welcome-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.welcome-section h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.welcome-section p {
+    margin-bottom: 30px;
+    color: #666;
+}
+
+/* Add or adjust your existing styles below */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 50px;
+}
+
+.image-section {
+    flex: 1;
+    text-align: center; /* Center the image in its container */
+}
+
+.image-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-section {
+    flex: 1;
+    padding: 20px;
+    color: #333; /* Adjust based on your design */
+}
+
+.welcome-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+/* Responsive layout for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.text-section{
+    background-color: #c3dcfa;
+    border-radius: 10px;
+}
+
+.fade-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+  }
+  
+  /* Apply this to all form elements and buttons for a consistent look */
+input, textarea, button {
+    font-family: 'Roboto', sans-serif; /* Assuming you're using Roboto */
+    font-size: 16px; /* Adjust based on your design */
+    padding: 10px 15px; /* Adjust padding to match the design */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 20px; /* Rounded corners */
+    box-sizing: border-box; /* Ensures padding doesn't affect the total width or height */
+    width: 100%; /* Full width */
+    margin-bottom: 10px; /* Space between each form element */
+}
+
+button {
+    background-color: #2a458a; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer; /* Changes cursor to indicate button */
+    border: none; /* No border for buttons */
+}
+
+/* Remove margin for the last element in the form to avoid extra space */
+form > *:last-child {
+    margin-bottom: 0;
+}
+
+.star-rating .star {
+    cursor: pointer;
+    margin-right: 5px; /* Space between stars */
+    font-size: 25px; /* Adjust based on your design */
+    color: grey; /* Default star color */
+    background-color: transparent; /* No background */
+    border: none; /* No border */
+    padding: 5px 10px; /* Smaller padding for stars */
+    border-radius: 10px; /* Slightly rounded, adjust as needed */
+}
+
+.star-rating .star.selected, .star-rating .star:hover {
+    color: green; /* Selected or hovered star color */
+}
+
+textarea {
+    height: 100px; /* Adjust based on your design */
+}
+
+input, textarea, button {
+    transition: all 0.3s ease; /* Smooth transition for background, border, and color changes */
+}
+
+/* For interactive elements like buttons or stars */
+button, .star-rating .star {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Interactive states */
+button:hover, .star-rating .star:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Change as per your design */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    height: 50px; /* Adjust based on your logo's size */
+}
+
+.about-link {
+    color: #000; /* Change as per your design */
+    text-decoration: none;
+    font-size: 16px; /* Adjust as needed */
+}
+
+.go-back {
+    background: none;
+    border: none;
+    font-size: 20px; /* Adjust as needed */
+    cursor: pointer;
+}
+
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f8f8; /* Light grey, adjust based on your design */
+    border-bottom: 1px solid #e7e7e7; /* Light grey border */
+}
+
+.site-header .logo {
+    height: 50px; /* Adjust based on your logo's size */
+}
+
+#back-button {
+    padding: 10px 20px;
+    background-color: #333; /* Dark background for visibility */
+    color: white; /* White text */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.site-header {
+    position: fixed; /* Make the header fixed */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the header spans the full width of the page */
+    z-index: 1000; /* Ensure the header stays on top of other elements */
+    background-color: #f8f8f8; /* Adjust the background color as needed */
+    /* ... other styles ... */
+}
+
+/* Add padding to the top of the body or main content area 
+   to ensure it doesn't get hidden under the fixed header. */
+body {
+    padding-top: 70px; /* Adjust based on the height of your header */
+}
+
+.feedback-container {
+    /* ... existing styles ... */
+    margin-top: 20px; /* Add margin-top if needed */
+    padding-top: 20px; /* Add padding-top to ensure it doesn't touch the header directly */
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Adjust background color as necessary */
+    padding: 10px 20px;
+    box-sizing: border-box;
+    z-index: 1000; /* Ensure the header is always on top */
+}
+
+.site-header .logo, .site-header nav {
+    display: inline-block; /* Align logo and navigation horizontally */
+    vertical-align: middle; /* Align the items vertically in the middle */
+}
+
+.site-header .logo {
+    height: 50px; /* Adjust based on your logo's size */
+}
+
+.site-header nav {
+    margin-left: 20px; /* Space between logo and navigation */
+}
+
+.site-header nav a {
+    text-decoration: none;
+    color: #000; /* Text color for navigation */
+    padding: 8px 15px; /* Padding around navigation links */
+    margin-right: 20px; /* Space between multiple navigation items, if any */
+}
+
+#back-button {
+    display: block; /* Make the button a block level element */
+    width: 50%; /* Make the button a circle */
+    height: 40px; /* Make the button a circle */
+    padding: 0; /* Remove padding */
+    margin: 10px auto 0; /* Center the button horizontally below the navbar */
+    background-color: white; /* Button background color */
+    color: #2a458a; /* Button text color */
+    border: none;
+    border-radius: 50%; /* Make the button round */
+    cursor: pointer;
+    text-align: center; /* Ensure text is centered */
+    line-height: 40px; /* Align text vertically */
+}
+
+
+.site-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8; /* Footer background color */
+    color: #333; /* Footer text color */
+    text-align: center;
+    padding: 10px 0; /* Padding above and below the text */
+    font-size: 14px; /* Adjust the font size as needed */
+    z-index: 1000; /* Ensure it doesn't overlap other fixed elements */
+    box-sizing: border-box;
+}
+
+.left-aligned-list {
+    list-style-position: inside; /* Aligns bullet points to the left */
+    padding-left: 0; /* Removes default padding */
+    text-align: left; /* Ensures text within the list is left-aligned */
+}
